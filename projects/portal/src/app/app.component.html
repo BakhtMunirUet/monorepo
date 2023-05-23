@@ -1,0 +1,6 @@
+<ng-container *ngIf="!isAuthenticate">
+  <lib-auth (onAuthProcessDone)="onAuthticateDone($event)"></lib-auth>
+</ng-container>
+<ng-container *ngIf="isAuthenticate">
+  <router-outlet></router-outlet>
+</ng-container>
