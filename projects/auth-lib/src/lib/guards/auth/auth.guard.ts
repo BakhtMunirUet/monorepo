@@ -24,7 +24,6 @@ export class AuthGuard implements CanActivate {
     let isAuthorize: boolean = true;
 
     if (!isAuthorize) {
-      this.router.navigate(['access-denied']);
       return false;
     }
 
