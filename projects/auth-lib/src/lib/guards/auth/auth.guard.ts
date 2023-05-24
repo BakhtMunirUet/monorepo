@@ -21,9 +21,9 @@ export class AuthGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    let isAuthorize: boolean = true;
+    let isAuthenticate: boolean = true;
 
-    if (!isAuthorize) {
+    if (!isAuthenticate) {
       return false;
     }
 
